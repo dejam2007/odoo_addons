@@ -1,0 +1,59 @@
+<openerp>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="dcm.list">
+      <field name="name">dcm list</field>
+      <field name="model">dcm.dcm</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="dcm.action_window">
+      <field name="name">dcm window</field>
+      <field name="res_model">dcm.dcm</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="dcm.action_server">
+      <field name="name">dcm server</field>
+      <field name="model_id" ref="model_dcm_dcm"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="dcm" id="dcm.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="dcm.menu_1" parent="dcm.menu_root"/>
+    <menuitem name="Menu 2" id="dcm.menu_2" parent="dcm.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="dcm.menu_1_list" parent="dcm.menu_1"
+              action="dcm.action_window"/>
+    <menuitem name="Server to list" id="dcm" parent="dcm.menu_2"
+              action="dcm.action_server"/>
+    -->
+  </data>
+</openerp>
