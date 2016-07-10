@@ -1,28 +1,28 @@
 <openerp>
   <data>
     <!-- explicit list view definition -->
-    <!--
+
     <record model="ir.ui.view" id="dcm.list">
-      <field name="name">dcm list</field>
-      <field name="model">dcm.dcm</field>
+      <field name="name">Question list</field>
+      <field name="model">dcm.question</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="user_id"/>
+          <field name="memo"/>
         </tree>
       </field>
     </record>
-    -->
+
 
     <!-- actions opening views on models -->
-    <!--
+
     <record model="ir.actions.act_window" id="dcm.action_window">
-      <field name="name">dcm window</field>
-      <field name="res_model">dcm.dcm</field>
+      <field name="name">Question window</field>
+      <field name="res_model">dcm.question</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
+
 
     <!-- server action to the one above -->
     <!--
@@ -40,9 +40,9 @@
     -->
 
     <!-- Top menu item -->
-    <!--
-    <menuitem name="dcm" id="dcm.menu_root"/>
-    -->
+
+    <menuitem name="DCM" id="dcm.menu_root" action="dcm.action_window"/>
+
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="dcm.menu_1" parent="dcm.menu_root"/>
